@@ -1,7 +1,7 @@
 # 事前準備
 1. 下記コマンドを実行
 ```bash
-# backendフォルダを作成して移動
+# docker-laravel-git-tutorialフォルダを作成して移動
 mkdir docker-laravel-git-tutorial && cd docker-laravel-git-tutorial
  
 # git clone する
