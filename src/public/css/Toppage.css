@@ -1,0 +1,134 @@
+/* 全体の基本スタイル設定 */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* ヘッダーのスタイル */
+header {
+    background-color: #333;
+    color: #fff;
+    padding-top: 20px;
+    min-height: 70px;
+    border-bottom: #df720e 3px solid;
+}
+
+header h1 {
+    text-align: center;
+    margin: 0;
+    padding-bottom: 12px;
+}
+
+/* ナビゲーションメニューのスタイル */
+nav ul {
+    padding: 0;
+    background-color: #fff;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* コンテンツエリアのスタイル */
+.container {
+    padding: 20px;
+}
+
+/* フッターのスタイル */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+}
+
+/* コンテンツのスタイル */
+.contents {
+    text-align: left;
+    margin: 20px auto;
+    max-width: 800px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border-radius: 5px;
+}
+
+/* セクションタイトルのスタイル設定、目立たせるための色と左側のボーダー */
+.contents h2 {
+    color: #df720e;
+    padding: 0.2rem;
+    border-left: 7px solid #df720e; /* 左側のボーダーを強調 */
+}
+
+.contents p, .contents ul li {
+    color: #666;
+}
+
+/* 画像のリサイズに関するスタイル */
+.resize-image {
+    width: 800px;
+    height: 450px;
+}
+
+/* ヘッダーコンテンツのスタイル */
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.github-icon {
+    width: 50px;
+    height: auto;
+    margin-left: 20px;
+}
+
+/* 認証関連ボタンのスタイル */
+.auth-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    margin: 10px 0;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-left: 30px;
+}
+
+.auth-button:hover {
+    background-color: #45a049;
+}
+
+/* Git用語セクションのスタイル */
+.term {
+    border-bottom: 1px solid #eee;
+    padding: 10px;
+}
+
+.term:last-child {
+    border-bottom: none;
+}
+
+.term h3 {
+    margin-top: 0;
+}
+
+.term p {
+    margin-bottom: 0;
+}
