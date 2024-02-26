@@ -1,0 +1,7 @@
+{
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.0.4",
+    "laravel-vite-plugin": "^1.0.1",
+    "vite": "^5.1.1"
+  }
+}
