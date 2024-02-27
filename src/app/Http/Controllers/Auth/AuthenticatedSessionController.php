@@ -29,8 +29,7 @@ class AuthenticatedSessionController extends Controller
 
         $request->session()->regenerate();
 
-        // Update the redirect to the custom URL after login
-        return redirect('http://localhost:8080/toppage');
+        return redirect()->route('home');
     }
 
     /**
@@ -44,7 +43,7 @@ class AuthenticatedSessionController extends Controller
 
         $request->session()->regenerateToken();
 
-        // Update the redirect to the custom URL after logout
-        return redirect('http://localhost:8080/toppage');
+        return redirect('/login');
     }
+
 }

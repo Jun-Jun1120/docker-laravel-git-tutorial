@@ -1,18 +1,29 @@
+/* CSS変数の定義 */
+:root {
+    --background-dark: #333; /* ヘッダーとフッターの背景色 */
+    --text-color-light: #fff; /* ヘッダーとフッターのテキスト色 */
+    --accent-color: #df720e; /* アクセント色、ボーダーなど */
+    --text-color-dark: #333; /* ナビゲーションのテキスト色 */
+    --background-light: #f4f4f4; /* bodyの背景色 */
+    --content-background: #f9f9f9; /* コンテンツの背景色 */
+    --text-color-general: #666; /* 一般テキスト色 */
+}
+
 /* 全体の基本スタイル設定 */
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: var(--background-light);
 }
 
 /* ヘッダーのスタイル */
 header {
-    background-color: #333;
-    color: #fff;
+    background-color: var(--background-dark);
+    color: var(--text-color-light);
     padding-top: 20px;
     min-height: 70px;
-    border-bottom: #df720e 3px solid;
+    border-bottom: var(--accent-color) 3px solid;
 }
 
 header h1 {
@@ -24,7 +35,7 @@ header h1 {
 /* ナビゲーションメニューのスタイル */
 nav ul {
     padding: 0;
-    background-color: #fff;
+    background-color: var(--text-color-light);
     text-align: center;
 }
 
@@ -35,7 +46,7 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #333;
+    color: var(--text-color-dark);
 }
 
 /* コンテンツエリアのスタイル */
@@ -45,8 +56,8 @@ nav ul li a {
 
 /* フッターのスタイル */
 footer {
-    background-color: #333;
-    color: #fff;
+    background-color: var(--background-dark);
+    color: var(--text-color-light);
     text-align: center;
     position: fixed;
     bottom: 0;
@@ -60,20 +71,20 @@ footer {
     margin: 20px auto;
     max-width: 800px;
     padding: 20px;
-    background-color: #f9f9f9;
+    background-color: var(--content-background);
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     border-radius: 5px;
 }
 
 /* セクションタイトルのスタイル設定、目立たせるための色と左側のボーダー */
 .contents h2 {
-    color: #df720e;
+    color: var(--accent-color);
     padding: 0.2rem;
-    border-left: 7px solid #df720e; /* 左側のボーダーを強調 */
+    border-left: 7px solid var(--accent-color); /* 左側のボーダーを強調 */
 }
 
 .contents p, .contents ul li {
-    color: #666;
+    color: var(--text-color-general);
 }
 
 /* 画像のリサイズに関するスタイル */
@@ -96,8 +107,8 @@ footer {
     margin-left: 20px;
 }
 
-/* 認証関連ボタンのスタイル */
-.auth-button {
+/* ボタンのスタイル */
+.primary-button {
     background-color: #4CAF50;
     color: white;
     padding: 10px 20px;
@@ -111,7 +122,7 @@ footer {
     margin-left: 30px;
 }
 
-.auth-button:hover {
+.primary-button:hover {
     background-color: #45a049;
 }
 

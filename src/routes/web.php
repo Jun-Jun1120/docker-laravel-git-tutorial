@@ -28,9 +28,9 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
-Route::get('/toppage', function () {
-    return view('Git_Tutorial.Toppage');
-})->name('toppage');
+
+Route::get('/', function () { return view('Git_Tutorial.Toppage'); })->name('home');
+
 
 
 require __DIR__.'/auth.php';
