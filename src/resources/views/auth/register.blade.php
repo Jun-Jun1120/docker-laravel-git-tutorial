@@ -2,6 +2,16 @@
     <form method="POST" action="{{ route('register') }}">
         @csrf
 
+        <!-- GitHub アイコンの挿入 -->
+        <div class="flex justify-center my-4">
+            <img src="/images/GitHub icon.png" alt="GitHub Icon" style="width: 50px; height: auto;">
+        </div>
+        <br>
+
+        <!-- 注意書き -->
+        <div class="mb-4 text-center text-sm text-gray-600">
+            ※社内のメールアドレスでのみ新規登録できます。
+        </div>
         <!-- Name -->
         <div>
             <x-input-label for="name" :value="__('Name')" />

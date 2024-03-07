@@ -2,6 +2,17 @@
     <!-- Session Status -->
     <x-auth-session-status class="mb-4" :status="session('status')" />
 
+    <!-- GitHub アイコンの挿入 -->
+    <div class="flex justify-center my-4">
+        <img src="/images/GitHub icon.png" alt="GitHub Icon" style="width: 50px; height: auto;">
+    </div>
+    <br>
+
+    <!-- 注意書き -->
+    <div class="mb-4 text-center text-sm text-gray-600">
+        ※社内のメールアドレスでのみログイン可能です。
+    </div>
+
     <form method="POST" action="{{ route('login') }}">
         @csrf
 
@@ -15,12 +26,10 @@
         <!-- Password -->
         <div class="mt-4">
             <x-input-label for="password" :value="__('Password')" />
-
             <x-text-input id="password" class="block mt-1 w-full"
-                            type="password"
-                            name="password"
-                            required autocomplete="current-password" />
-
+                          type="password"
+                          name="password"
+                          required autocomplete="current-password" />
             <x-input-error :messages="$errors->get('password')" class="mt-2" />
         </div>
 
@@ -42,6 +51,12 @@
             <x-primary-button class="ms-3">
                 {{ __('Log in') }}
             </x-primary-button>
+
+            @if (Route::has('register'))
+                <a href="{{ route('register') }}" class="ml-4 inline-flex items-center px-4 py-2 bg-gray-800 border border-transparent rounded-md font-semibold text-xs text-white uppercase tracking-widest hover:bg-gray-700 active:bg-gray-900 focus:outline-none focus:border-gray-900 focus:ring ring-gray-300 disabled:opacity-25 transition ease-in-out duration-150">
+                    {{ __('Register') }}
+                </a>
+            @endif
         </div>
     </form>
 </x-guest-layout>

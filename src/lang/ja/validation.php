@@ -40,7 +40,7 @@ return [
     'doesnt_end_with' => ':attributeは、:values以外の値で終わるように指定してください。',
     'doesnt_start_with' => ':attributeは、:values以外の値で始まるように指定してください。',
     'email' => ':attributeには、有効なメールアドレスを指定してください。',
-    'ends_with' => ':attributeには、:valuesのどれかで終わる値を指定してください。',
+    'ends_with' => ':attributeは、:valuesで終わる必要があります。',
     'enum' => '選択された:attributeは正しくありません。',
     'exists' => '選択された:attributeは正しくありません。',
     'extensions' => ':attributeは、:valuesの拡張子を指定してください。',
