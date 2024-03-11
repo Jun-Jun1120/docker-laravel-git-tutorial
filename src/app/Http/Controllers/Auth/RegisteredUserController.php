@@ -16,8 +16,6 @@ class RegisteredUserController extends Controller
 {
     /**
      * Display the registration view.
-     *
-     * @return View 正しい戻り値の型ヒント
      */
     public function create(): View
     {

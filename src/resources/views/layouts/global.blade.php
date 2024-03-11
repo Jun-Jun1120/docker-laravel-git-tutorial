@@ -10,7 +10,7 @@
 <header>
     <div class="header-content">
         <h1>Gitチュートリアルへようこそ</h1>
-        <img src="/images/GitHub icon.png" alt="GitHubアイコン" class="github-icon">
+        <img src="/images/GitHub icon.png" alt="GitHub Icon" class="github-icon">
         @include('partials.auth-links')
     </div>
     @include('partials.navigation')

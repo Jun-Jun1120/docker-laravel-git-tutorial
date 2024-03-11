@@ -2,9 +2,9 @@
     <form method="POST" action="{{ route('register') }}">
         @csrf
 
-        <!-- GitHub アイコンの挿入 -->
+        <!-- GitHub アイコン -->
         <div class="flex justify-center my-4">
-            <img src="/images/GitHub icon.png" alt="GitHub Icon" style="width: 50px; height: auto;">
+            <img src="{{ asset('images/GitHub icon.png') }}" alt="GitHub Icon" class="github-icon">
         </div>
         <br>
 

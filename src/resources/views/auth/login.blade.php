@@ -2,9 +2,9 @@
     <!-- Session Status -->
     <x-auth-session-status class="mb-4" :status="session('status')" />
 
-    <!-- GitHub アイコンの挿入 -->
+    <!-- GitHub アイコン -->
     <div class="flex justify-center my-4">
-        <img src="/images/GitHub icon.png" alt="GitHub Icon" style="width: 50px; height: auto;">
+        <img src="{{ asset('images/GitHub icon.png') }}" alt="GitHub Icon" class="github-icon">
     </div>
     <br>
 
@@ -52,11 +52,11 @@
                 {{ __('Log in') }}
             </x-primary-button>
 
-            @if (Route::has('register'))
-                <a href="{{ route('register') }}" class="ml-4 inline-flex items-center px-4 py-2 bg-gray-800 border border-transparent rounded-md font-semibold text-xs text-white uppercase tracking-widest hover:bg-gray-700 active:bg-gray-900 focus:outline-none focus:border-gray-900 focus:ring ring-gray-300 disabled:opacity-25 transition ease-in-out duration-150">
-                    {{ __('Register') }}
-                </a>
-            @endif
+                @if (Route::has('register'))
+                    <a href="{{ route('register') }}" class="register-link">
+                        {{ __('Register') }}
+                    </a>
+                @endif
         </div>
     </form>
 </x-guest-layout>

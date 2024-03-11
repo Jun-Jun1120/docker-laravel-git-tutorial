@@ -143,3 +143,10 @@ footer {
 .term p {
     margin-bottom: 0;
 }
+
+.github-icon {
+    width: 3.5rem;
+    height: 3.5rem;
+    margin-top: -0.6rem;
+}
+
