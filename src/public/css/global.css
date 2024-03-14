@@ -83,6 +83,12 @@ footer {
     border-left: 7px solid var(--accent-color); /* 左側のボーダーを強調 */
 }
 
+.contents h3 {
+    color: var(--accent-color);
+    padding: 0.2rem;
+    border-left: 7px solid var(--accent-color); /* 左側のボーダーを強調 */
+}
+
 .contents p, .contents ul li {
     color: var(--text-color-general);
 }
