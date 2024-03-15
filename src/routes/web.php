@@ -29,6 +29,7 @@ Route::middleware('auth')->group(function () {
 });
 
 Route::get('/', function () {return view('toppage');})->middleware(['auth'])->name('home');
+Route::get('/git-troubleshooting', function () {return view('git-troubleshooting');})->middleware(['auth'])->name('git-troubleshooting');
 
 
 require __DIR__.'/auth.php';
