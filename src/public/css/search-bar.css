@@ -1,0 +1,42 @@
+/* 検索コンテナ */
+.search-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* 検索フォーム */
+.search-container form {
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    align-items: center;
+    background-color: #f8f8f8;
+    border-radius: 25px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* 検索入力欄 */
+.search-container input[type="text"] {
+    flex: 1;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px 0 0 25px;
+    font-size: 16px;
+}
+
+/* 検索ボタン */
+.search-container button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #df720e;;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 0 25px 25px 0;
+}
+
+/* 検索ボタンのホバー時のスタイル */
+.search-container button:hover {
+    background-color: #393838;
+}

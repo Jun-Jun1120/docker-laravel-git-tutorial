@@ -1,6 +1,6 @@
 @extends('layouts.global')
 
-@section('title', 'Gitチュートリアルサイトのトップページ')
+@section('title', 'Git入門')
 
 @section('content')
     <div class="contents">
