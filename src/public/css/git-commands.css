@@ -1,0 +1,16 @@
+/* コマンドリストの表のデザイン */
+.git-commands-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.git-commands-table th,
+.git-commands-table td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+}
+
+.git-commands-table td:hover {
+    background-color: #ddd;
+}

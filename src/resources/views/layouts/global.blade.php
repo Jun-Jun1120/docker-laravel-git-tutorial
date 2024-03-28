@@ -3,11 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@yield('title', 'Gitチュートリアルサイト')</title>
+    <title>@yield('title', 'Git入門')</title>
     <!-- Js -->
     @vite('resources/js/app.js')
     <!-- Css -->
     <link href="{{ asset('css/global.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/git-commands.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/search-bar.css') }}" rel="stylesheet" >
+
 </head>
 
 <body>
@@ -25,7 +28,7 @@
 </div>
 
 <footer>
-    <p>© 2024 Gitチュートリアルサイト</p>
+    <p>© 2024 Git入門サイト</p>
 </footer>
 </body>
 </html>

@@ -1,5 +1,5 @@
 <?php
-
+use App\Http\Controllers\GitCommandController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
@@ -28,8 +28,13 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
-Route::get('/', function () {return view('toppage');})->middleware(['auth'])->name('home');
-Route::get('/git-troubleshooting', function () {return view('git-troubleshooting');})->middleware(['auth'])->name('git-troubleshooting');
+Route::middleware(['auth'])->group(function () {
+    Route::get('/', function () { return view('toppage'); })->name('home');
+    Route::get('/git-troubleshooting', function () { return view('git-troubleshooting'); })->name('git-troubleshooting');
+    Route::get('/git-commands', [GitCommandController::class, 'index'])->name('git-commands.index');
+    Route::get('/git-commands/search', [GitCommandController::class, 'search'])->name('git-commands.search');
+});
+
 
 
 require __DIR__.'/auth.php';
